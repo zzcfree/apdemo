@@ -109,6 +109,9 @@ export const getRouterData = (app) => {
     '/list/table-list': {
       component: dynamicWrapper(app, ['rule'], () => import('../routes/List/TableList')),
     },
+    '/list/new-list': {
+    component: dynamicWrapper(app, ['rule'], () => import('../routes/List/New')),
+    },
     '/list/basic-list': {
       component: dynamicWrapper(app, ['list'], () => import('../routes/List/BasicList')),
     },
